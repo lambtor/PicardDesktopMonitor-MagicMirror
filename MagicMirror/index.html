@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LCARS STATUS REPORT</title>
+	<meta name="google" content="notranslate" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="fonts/roboto.css">
+	<!-- custom.css is loaded by the loader.js to make sure it's loaded after the module css files. -->
+
+	<script type="text/javascript">
+		var version = "#VERSION#";
+	</script>
+</head>
+<body>
+	<!-- LCARS DIVS START HERE -->
+	
+	<div class="verticalbarleft swoop1"></div>
+		
+	<!--<div class="verticalbarleftinner swoop1"></div>-->
+	<div class="verticalbarleftinnerblack blackbg"></div>	
+	
+	<div class="maintitlediv">STATUS REPORT</div>
+	<div class="upperdataleftframe bordercolor1"></div>
+	<div class="upperdataleftinnerblack blackbg"></div>
+	<div class="upperdatamidframe bordercolor2"></div>
+	<div class="upperdatamidinnerblack blackbg"></div>
+	<div class="upperdatamidfooterbar bordercolor2"></div>
+	<div class="upperdataleftfooterbar bordercolor1"></div>
+	<div class="upperdataleftheaderaccent leftaccentsmall bordercolor1"></div>
+	<div class="upperdataleftfooteraccent leftaccentsmall bordercolor1"></div>
+	<div class="upperdatamidheaderaccent rightaccentsmall bordercolor2"></div>
+	<div class="upperdatamidfooteraccent rightaccentsmall bordercolor2"></div>
+	<!--<div class="horizontalbarmiddle swoop1"></div>-->
+	
+	<div class="lowerdataleftheaderaccent leftaccentmedium bordercolor3"></div>
+	<div class="lowerdataleftfooteraccent leftaccentmedium bordercolor3"></div>
+	<div class="lowerdataleftframe bordercolor3"></div>
+	<div class="lowerdataleftinnerblack blackbg"></div>
+	<div class="lowerdatalefttitle blackbg lowerheadertext lowertitlecolor">NEWS</div>
+		
+	<div class="lowerdatarightframe bordercolor4"></div>
+	<div class="lowerdatarightinnerblack blackbg"></div>
+	<div class="lowerdatarighttitle blackbg lowerheadertext lowertitlecolor">TRAINS</div>
+	<div class="lowerdatarightheaderaccent rightaccentmedium bordercolor4"></div>
+	<div class="lowerdatarightfooteraccent rightaccentmedium bordercolor4"></div>
+	<div class="todayforecastheader effectindex datalabel">POTENTIAL ATMOSPHERE</div>	
+	
+	<!-- 3 buttons for themes -->
+	<button type="button" id="btntng" class="btn btntng tngactive">NEXT GENERATION</button>
+	<button type="button" id="btnds9" class="btn btnds9">DEEP SPACE NINE</button>
+	<button type="button" id="btnvoy" class="btn btnvoy">VOYAGER</button>
+	<!-- yellow alert theme? -->
+	<button type="button" id="btnred" class="btn btnred">RED ALERT</button>
+	
+	<!-- LCARS DIVS END HERE -->	
+	<div class="region fullscreen below"><div class="container"></div></div>
+	<div class="region top bar">
+		<div class="container"></div>
+		<div class="region top left"><div class="container"></div></div>
+		<div class="region top center"><div class="container"></div></div>
+		<div class="region top right"><div class="container"></div></div>
+	</div>
+	<div class="region upper third"><div class="container"></div></div>
+	<div class="region middle center"><div class="container"></div></div>
+	<div class="region lower third"><div class="container"><br/></div></div>
+	<div class="region bottom bar">
+		<div class="container"></div>
+		<div class="region bottom left"><div class="container"></div></div>
+		<div class="region bottom center"><div class="container"></div></div>
+		<div class="region bottom right"><div class="container"></div></div>
+	</div>
+	<div class="region fullscreen above"><div class="container"></div></div>
+
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="vendor/node_modules/nunjucks/browser/nunjucks.min.js"></script>
+	<script type="text/javascript" src="js/defaults.js"></script>
+	<script type="text/javascript" src="#CONFIG_FILE#"></script>
+	<script type="text/javascript" src="vendor/vendor.js"></script>
+	<script type="text/javascript" src="modules/default/defaultmodules.js"></script>
+	<script type="text/javascript" src="js/logger.js"></script>
+	<script type="text/javascript" src="translations/translations.js"></script>
+	<script type="text/javascript" src="js/translator.js"></script>
+	<script type="text/javascript" src="js/class.js"></script>
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript" src="js/loader.js"></script>
+	<script type="text/javascript" src="js/socketclient.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
