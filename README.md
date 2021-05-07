@@ -4,7 +4,8 @@ This project is my attempt to build an LCARS kiosk using a copy of the <a href='
 
 At best, this is a highly customized fork of their project.  
 
-This version is intended to run on a raspberry pi zero with a hyperpixel screen.  Many of the modules have been heavily modified, and the assembly of hardware is completely custom / original. Anyone attempting to build one of these should have some comfort level with soldering or assembling pi hardware.  I highly recommend that anyone building one of these should have a high comfort level with javascript programming & html / css manipulation.<br><br>
+This version is intended to run on a raspberry pi zero with a hyperpixel screen.  To get magicMirror running on a Pi Zero, I used this guide: https://www.linuxscrew.com/raspberry-pi-magic-mirror
+<br>Many of the modules have been heavily modified, and the assembly of hardware is completely custom / original. Anyone attempting to build one of these should have some comfort level with soldering or assembling pi hardware.  I highly recommend that anyone building one of these should have a high comfort level with javascript programming & html / css manipulation.<br><br>
 
 General issues to be aware of even after software setup is complete:<br>
 <ul>
