@@ -8,7 +8,7 @@ At its simplest, this is a highly customized fork of their project.  There are s
 	<li>Theme changes (tng / ds9 / voy / red alert) via T/N, D, V, R buttons respectively.</li>
 	<li>Full page refresh (control+F5)</li>
 	<li>Close magic mirror browser window and tell pi to shutdown (via Insert key)</li>
-</ul> All key actions are defined and executed with teensyLC, but shutdown and sounds are handled by mapping related keyboard buttons in hp-keypress.py, which is configured as a service on the pi.  hp-keypress.py relies on <a href="https://github.com/boppreh/keyboard">https://github.com/boppreh/keyboard</a> library.
+</ul> All key actions are defined and executed with teensyLC, but shutdown and sounds are handled by mapping related keyboard buttons in hp-keypress.py, which is configured as a service on the pi.  hp-keypress.py relies on <a href="https://github.com/boppreh/keyboard">https://github.com/boppreh/keyboard</a> library.<br><br>
 
 This version is intended to run on a raspberry pi zero with a hyperpixel screen.  To get magicMirror running on a Pi Zero, I used this guide: https://www.linuxscrew.com/raspberry-pi-magic-mirror
 <br>Many of the modules have been heavily modified, and the assembly of hardware is completely custom / original. Anyone attempting to build one of these should have some comfort level with soldering or assembling pi hardware.  I highly recommend that anyone building one of these should have a high comfort level with javascript programming & html / css manipulation.<br><br>
