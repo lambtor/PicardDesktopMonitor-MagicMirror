@@ -3,7 +3,7 @@
 //#include <Keyboard.h>
 
 //single keypress is print screen button
-//held for 2-5 seconds => full refresh of page or restart
+//held for 2-5 seconds => full refresh of page or "restart"
 //held for 5+ seconds => shutdown machine
 //KEY_PAUSE				toggle display power on/off
 //KEY_SCROLL_LOCK		close magic mirror and shutdown system -> 
@@ -14,7 +14,8 @@
 //prnt scrn, prtscn, print screen
 //in python interface
 //notes on audio - pulse audio needs to have the proper device configured as default using device name, not sink #
-//sink number can work, but numbers seem to get randomly assigned at startup.
+//sink number can work, but numbers seem to get randomly assigned at startup. 
+//sound issue is either this or just problem with loading all audio script libraries. often this problem goes away after using control+F5 to reload/restart mirror from browser window
 //sudo alsamixer
 //sudo alsactl store **this stores alsamixer settings like volume control**
 
@@ -97,12 +98,12 @@ void loop() {
 	// delays in loop(), so this runs repetitively at a rate
 	// faster than the buttons could be pressed and released.
 	button0.update();
-	
+	//theme button statuses (base outer perimeter)
 	button1.update();
 	button2.update();
 	button3.update();
 	button4.update();
-	
+	//shutdown button status
 	buttonSD.update();
 
 	// Check each button for "falling" edge.
@@ -131,7 +132,7 @@ void loop() {
 		Keyboard.press(KEYMAP_SECOND);
 	}
 
-	//4 theme triggers and 1 shutdown button
+	//4 theme triggers and 1 direct shutdown button
 	/* N	D	V	R  */
 
 	//all 4 buttons for theme changes - these are mapped to single letter keys in magic mirror
@@ -165,7 +166,6 @@ void loop() {
 	}
 
 	// Check each button for "rising" edge
-	// Type a message on the Keyboard when each button releases.
 	// For many types of projects, you only care when the button
 	// is pressed and the release isn't needed.
 	// rising = low (pressed - button connects pin to ground)
@@ -189,6 +189,7 @@ void loop() {
 				Keyboard.set_key1(0);
 				Keyboard.send_now();
 			} else {
+				//button was held more than 5 seconds - close mirror and shutdown pi
 				//send alt-f4 to close magic mirror first
 				Keyboard.set_modifier(ALT_KEY);
 				Keyboard.set_key1(F4_KEY);
@@ -200,7 +201,7 @@ void loop() {
 				Keyboard.send_now();
 				delay(300);
 			
-				//button was held down for more than 5 seconds - send shutdown trigger key
+				//send shutdown trigger key
 				Keyboard.press(KEYMAP_THIRD);
 				//delay ensures all systems will accept keystroke - mac osx is largest throttler
 				delay(300);
