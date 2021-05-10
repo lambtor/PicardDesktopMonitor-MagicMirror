@@ -2,8 +2,6 @@
 #include <Bounce.h>
 //#include <Keyboard.h>
 
-
-
 //single keypress is print screen button
 //held for 2-5 seconds => full refresh of page or restart
 //held for 5+ seconds => shutdown machine
@@ -15,6 +13,10 @@
 //KEY_PRINTSCREEN		refresh magicmirror (control + F5)
 //prnt scrn, prtscn, print screen
 //in python interface
+//notes on audio - pulse audio needs to have the proper device configured as default using device name, not sink #
+//sink number can work, but numbers seem to get randomly assigned at startup.
+//sudo alsamixer
+//sudo alsactl store **this stores alsamixer settings like volume control**
 
 #define KEYMAP_MAIN		KEY_PAUSE
 #define KEYMAP_SECOND	KEY_SCROLL_LOCK	
@@ -34,6 +36,12 @@
 #define PIN_BUTTON3		24
 #define PIN_BUTTON4		25
 #define PIN_BUTTON_SD	0
+
+//teensy lc can use pins 16,17,20,22,23 or 3 and 4 for analogWrite commands
+#define PIN_LED1		16
+#define PIN_LED2		17
+
+#define LED_BRIGHTNESS	32
 
 //#define F5_KEY			KEY_A
 //#define KEYMAP_MAIN		KEY_M
@@ -56,26 +64,32 @@ unsigned long mnButtonStart	= 0;
 unsigned long mnButtonEnd = 0;
 
 void setup() {
-  // Configure the pins for input mode with pullup resistors.
-  // The pushbuttons connect from each pin to ground.  When
-  // the button is pressed, the pin reads LOW because the button
-  // shorts it to ground.  When released, the pin reads HIGH
-  // because the pullup resistor connects to +5 volts inside
-  // the chip.  LOW for "on", and HIGH for "off" may seem
-  // backwards, but using the on-chip pullup resistors is very
-  // convenient.  The scheme is called "active low", and it's
-  // very commonly used in electronics... so much that the chip
-  // has built-in pullup resistors!
-  
-  pinMode(PIN_BUTTON0, INPUT_PULLUP);
-  
-  pinMode(PIN_BUTTON1, INPUT_PULLUP);
-  pinMode(PIN_BUTTON2, INPUT_PULLUP);
-  pinMode(PIN_BUTTON3, INPUT_PULLUP);
-  pinMode(PIN_BUTTON4, INPUT_PULLUP);
-  pinMode(PIN_BUTTON_SD, INPUT_PULLUP);
-  
-  mnButtonStart = millis();
+	// Configure the pins for input mode with pullup resistors.
+	// The pushbuttons connect from each pin to ground.  When
+	// the button is pressed, the pin reads LOW because the button
+	// shorts it to ground.  When released, the pin reads HIGH
+	// because the pullup resistor connects to +5 volts inside
+	// the chip.  LOW for "on", and HIGH for "off" may seem
+	// backwards, but using the on-chip pullup resistors is very
+	// convenient.  The scheme is called "active low", and it's
+	// very commonly used in electronics... so much that the chip
+	// has built-in pullup resistors!
+
+	pinMode(PIN_BUTTON0, INPUT_PULLUP);
+
+	pinMode(PIN_BUTTON1, INPUT_PULLUP);
+	pinMode(PIN_BUTTON2, INPUT_PULLUP);
+	pinMode(PIN_BUTTON3, INPUT_PULLUP);
+	pinMode(PIN_BUTTON4, INPUT_PULLUP);
+	pinMode(PIN_BUTTON_SD, INPUT_PULLUP);
+
+	pinMode(PIN_LED1, OUTPUT);
+	pinMode(PIN_LED2, OUTPUT);
+	
+	analogWrite(PIN_LED1, LED_BRIGHTNESS);
+	analogWrite(PIN_LED2, LED_BRIGHTNESS);
+
+	mnButtonStart = millis();
 }
 
 void loop() {
