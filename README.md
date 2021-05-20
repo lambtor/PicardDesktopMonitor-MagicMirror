@@ -5,7 +5,7 @@ This project is my attempt to build an LCARS kiosk using a copy of the <a href='
 At its simplest, this is a highly customized fork of their project.  There are several hardware buttons mapped to keyboard buttons to trigger multiple actions:
 <ul>
 	<li>Screen blanking (set power pin to off while keeping pi on) via Pause key</li>
-	<li>Theme changes (tng / ds9 / voy / red alert) via T/N, D, V, R buttons respectively.</li>
+	<li>Theme changes (tng / ds9 / voy / red alert) via T/N, D, V, R "keyboard" buttons respectively.</li>
 	<li>Full page refresh (control+F5)</li>
 	<li>Close magic mirror browser window and tell pi to shutdown (via Insert key)</li>
 </ul> All key actions are defined and executed with teensyLC, but shutdown and sounds are handled by mapping related keyboard buttons in hp-keypress.py, which is configured as a service on the pi.  hp-keypress.py relies on <a href="https://github.com/boppreh/keyboard">https://github.com/boppreh/keyboard</a> library.<br><br>
