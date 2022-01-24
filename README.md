@@ -2,6 +2,8 @@
 
 This project is my attempt to build an LCARS kiosk using a copy of the <a href='https://github.com/MichMich/MagicMirror'>MagicMirror project</a>.<br><br>
 
+<a href="https://youtu.be/VpyOh2fm7kE"></a>
+
 At its simplest, this is a highly customized fork of their project.  There are several hardware buttons mapped to keyboard buttons to trigger multiple actions:
 <ul>
 	<li>Screen blanking (set power pin to off while keeping pi on) via Pause key</li>
