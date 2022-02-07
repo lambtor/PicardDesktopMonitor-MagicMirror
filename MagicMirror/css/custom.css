@@ -1,27 +1,33 @@
 html {
   /*cursor: none;*/
-	overflow: hidden;
-	background: #000000;	
+        overflow: hidden;
+        background: #000000;
 }
 
 ::-webkit-scrollbar {
-	display: none;
+        display: none;
+}
+
+@font-face {
+        font-family: "Swiss911 UCm BT";
+        src: url("Swiss911_UCm_BT.woff") format("woff"),
+        url("Swiss911_UCm_BT.ttf") format("truetype");
 }
 
 body {
-	margin: 0;
-	position: absolute;
-	height: calc(100%);
-	width: calc(100%);
-	background: #000000;
-	/*color: #DEDEDE;*/
-	color: #C3D1FE;
-	font-family: "Swiss911 UCm BT", sans-serif;
-	font-weight: normal;
-	font-size: 2em;
-	line-height: 1.5em;
-	-webkit-font-smoothing: antialiased;	
-	cursor: default;
+        margin: 0;
+        position: absolute;
+        height: calc(100%);
+        width: calc(100%);
+        background: #000000;
+        /*color: #DEDEDE;*/
+        color: #C3D1FE;
+/*      font-family: "Swiss911 UCm BT", sans-serif;
+*/      font-weight: normal;
+        font-size: 2em;
+        line-height: 1.5em;
+        -webkit-font-smoothing: antialiased;
+        cursor: default;
 }
 
 /**
@@ -30,12 +36,12 @@ body {
 
 .dimmed {
   /*color: #666;*/
-	color: inherit;
+        color: inherit;
 }
 
 .normal {
  /* color: #999;*/
-	color: inherit;
+        color: inherit;
 }
 
 .bright {
@@ -43,94 +49,118 @@ body {
 }
 
 .blackbg {
-	background-color: #000000;
+        background-color: #000000;
 }
 
 /* all fonts need to be migrated to screen percentages */
 .xsmall {
-	font-size: calc(1.95vh);
-	line-height: calc(2.6vh);
+/*      font-size: calc(1.95vh);
+        line-height: calc(2.6vh);
+*/
+        font-size: calc(1.4625vh);
+        line-height: calc(1.95vh);
 }
 
 .small {
-	font-size: calc(2.6vh);
-	line-height: calc(3.25vh);
+/*      font-size: calc(2.6vh);
+        line-height: calc(3.25vh);
+*/      font-size: calc(1.95vh);
+        line-height: calc(2.4375vh);
+
 }
 
 .medium {
-	font-size: calc(3.9vh);
-	line-height: calc(4.55vh);
+/*      font-size: calc(3.9vh);
+        line-height: calc(4.55vh);
+*/      font-size: calc(2.925vh);
+        line-height: calc(3.4125vh);
+
 }
 
 .medium-seconds {
-	/* this needs to be relative to screen size, large font */
-	/*font-size: calc(100%);*/
-	line-height: 1.5em;
-	padding-bottom: calc(2.6vh);
+        /* this needs to be relative to screen size, large font */
+        /*font-size: calc(100%);*/
+/*      line-height: 1.5em;
+        padding-bottom: calc(2.6vh);
+*/      line-height: 1.125em;
+        padding-bottom: calc(1.95vh);
+
 }
 
 .trainstoptable {
-/*	width: 250px;	*/
-	width: calc(31.6vw);
-	margin: 0px;
+/*      width: 250px;   */
+        width: calc(31.6vw);
+        margin: 0px;
 }
 
 .trainstoptable td {
-	margin: 0px;
-	padding: 0px;
+        margin: 0px;
+        padding: 0px;
 }
 
 .trainstopname {
-	vertical-align: top;
-	text-align: right;
-	word-wrap: break-word;
+        vertical-align: top;
+        text-align: right;
+        word-wrap: break-word;
 }
 
 .trainroutedestinationname {
-	vertical-align: top;
-	text-align: right;
-	word-wrap: break-word;	
-	width: calc(8.66vw);
+        vertical-align: top;
+        text-align: right;
+        word-wrap: break-word;
+        width: calc(8.66vw);
 }
 
 .trainETA {
-	/*width: 80px;*/
-	width: calc(7.5vw);
-	vertical-align: top;
-	text-align: right;
-	word-wrap: break-word;
+        /*width: 80px;*/
+        width: calc(7.5vw);
+        vertical-align: top;
+        text-align: right;
+        word-wrap: break-word;
 }
 
 .trainETAfont {
-	font-size: calc(3.9vh);
-	line-height: calc(4.55vh);
+/*      font-size: calc(3.9vh);
+        line-height: calc(4.55vh);
+*/      font-size: calc(2.925vh);
+        line-height: calc(3.4125vh);
+
 }
 
 .trainschedulediv {
-	/*margin-top: -30px;
-	margin-bottom: -30px;*/
-	/*margin-top: calc(-3.8vh);*/
-	top: 0px; /*calc(-3.8vh);*/
-	margin-bottom: calc(-0.5vh);
-	
-	padding-top: 0px;
-	padding-bottom: 0px;
+        /*margin-top: -30px;
+        margin-bottom: -30px;*/
+        /*margin-top: calc(-3.8vh);*/
+        top: 0px; /*calc(-3.8vh);*/
+/*      margin-bottom: calc(-0.5vh);
+*/      margin-bottom: calc(-0.375vh);
+
+        padding-top: 0px;
+        padding-bottom: 0px;
 }
 
 .large {
   /*font-size: 65px;
   line-height: 65px;*/
-	font-size: calc(8.46vh);
-	line-height: calc(8.46vh);
+/*      font-size: calc(8.46vh);
+        line-height: calc(8.46vh);
+*/      font-size: calc(6.345vh);
+        line-height: calc(6.345vh);
+
 }
 
 .xlarge {
   /*font-size: 75px;
   line-height: 75px;*/
-	font-size: calc(9.76vh);
-	line-height: calc(9.76vh);
-	/*letter-spacing: -3px;*/
-	letter-spacing: calc(-0.3vw);
+/*      font-size: calc(9.76vh);
+        line-height: calc(9.76vh);
+*/
+        font-size: calc(7.32vh);
+        line-height: calc(7.32vh);
+
+        /*letter-spacing: -3px;*/
+/*      letter-spacing: calc(-0.3vw);
+*/      letter-spacing: calc(-0.225vw);
 }
 
 .thin {
@@ -163,11 +193,11 @@ body {
 
 header {
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 11px;
   font-family: "Swiss911 UCm BT", Arial, Helvetica, sans-serif;
   font-weight: 100;
   border-bottom: 1px solid #666666;
-  line-height: 15px;
+  line-height: 11px;
   padding-bottom: 5px;
   margin-bottom: 10px;
   /*color: #999;*/
@@ -217,12 +247,12 @@ sup {
   right: -60px;
   bottom: -60px;
  /* pointer-events: auto;*/
-	z-index: -1;
+        z-index: -1;
 }
 
 .region.fullscreen * {
   pointer-events: auto;
-	z-index: -1;
+        z-index: -1;
 }
 
 .region.right {
@@ -235,7 +265,8 @@ sup {
 }
 
 .region.top .container {
-  margin-bottom: 25px;
+/*  margin-bottom: 25px;
+  */ margin-bottom: 19px;
 }
 
 .region.bottom .container {
@@ -264,11 +295,12 @@ sup {
 
 .region.bottom {
   /*bottom: 0;*/
-	width: calc(60.93vw);	
-	align: left;
-	/*top: calc(58.5vh);*/
-	top: calc(63.8vh);
-	position: absolute;
+        width: calc(60.93vw);
+        align: left;
+        /*top: calc(58.5vh);*/
+/*      top: calc(63.8vh);
+*/      top: calc(47.85vh);
+        position: absolute;
 }
 
 .region.bottom .container:empty {
@@ -276,7 +308,7 @@ sup {
 }
 
 .region.bottom.bar {
-	
+
 }
 
 .region.bottom.right,
@@ -306,23 +338,25 @@ sup {
 }
 
 .region.bottom.right {
-	position: absolute;
-	align: left;
-	margin: 0px;
-	top: calc(-3.8vh);
-	left: calc(62.2vw);
-	width: calc(34.1vw);
+        position: absolute;
+        align: left;
+        margin: 0px;
+/*      top: calc(-3.8vh);
+*/      top: calc(-2.85vh);
+        left: calc(62.2vw);
+        width: calc(34.1vw);
 }
 
 /* used exclusively for date, time, stardate */
 .region.middle.center {
-	position: absolute;
-	align: left;
-	margin: 0px;
-	left: calc(21.29vw);
-	top: calc(11.2vh);
-	z-index: 3;
-	width: calc(51.5vw);
+        position: absolute;
+        align: left;
+        margin: 0px;
+        left: calc(21.29vw);
+/*      top: calc(11.2vh);
+*/      top: calc(8.9vh);
+        z-index: 3;
+        width: calc(51.5vw);
 }
 
 .region.lower.third {
@@ -340,772 +374,820 @@ sup {
 }
 
 #module_7_newsfeed {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 0px;
-	width: 98%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+        width: 98%;
 }
 #module_8_newsfeed {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 0px;
-	width: 98%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+        width: 98%;
 }
 #module_9_newsfeed {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 0px;
-	width: 98%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+        width: 98%;
 }
 
 #module_10_MMM-HTTPRequestDisplay {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 0px;
-	width: 98%;
-	/*float: left;
-	align: left;
-	text-align: left;*/
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+        width: 98%;
+        /*float: left;
+        align: left;
+        text-align: left;*/
 }
 
 .clockdiv {
 }
 
-/* everything needs to be converted to scale to viewport height (vh) or viewport width (vw) */
+/* everything needs to be converted to scale to viewport height (vh) or viewport
+ width (vw) */
 .timefont {
-	font-size: calc(4.6vh);
-	line-height: calc(4.6vh);
-	background-color: #000000;
+/*      font-size: calc(4.6vh);
+        line-height: calc(4.6vh);
+*/      font-size: calc(3.45vh);
+        line-height: calc(3.45vh);
+        background-color: #000000;
 }
 
 .actualtime {
-	/*left: -3px;*/
-	left: calc(-2.2vw);
-	top: 0px;
-	position: absolute;
-	padding: 0px 7px 0px 7px;
+        /*left: -3px;*/
+        left: calc(-2.2vw);
+        top: 0px;
+        position: absolute;
+/*      padding: 0px 7px 0px 7px;
+*/      padding: 0px 7px 0px 7px;
 }
 
 .actualdate {
-	right: 0px;
-	top: 0px;
-	text-align: right;
-	align: right;	
-	position: absolute;
-	padding: 0px 7px 0px 10px;
+        right: 0px;
+        top: 0px;
+        text-align: right;
+        align: right;
+        position: absolute;
+/*      padding: 0px 7px 0px 10px;
+*/      padding: 0px 7px 0px 10px;
 }
 
-.actualstardate {	
-	/* all commented px values are intended for 1024x768 monitor */
-	right: 0px;
-	top: calc(29.45vh);
-	text-align: right;
-	vertical-align: middle;
-	align: right;
-	position: absolute;
-	background-color: #000000;
-	padding: 0px 7px 0px 10px;
+.actualstardate {
+        /* all commented px values are intended for 1024x768 monitor */
+        right: 0px;
+/*      top: calc(29.45vh);
+*/      top: calc(22.0875vh);
+        text-align: right;
+        vertical-align: middle;
+        align: right;
+        position: absolute;
+        background-color: #000000;
+/*      padding: 0px 7px 0px 10px;
+*/      padding: 0px 7px 0px 10px;
+
 }
 
 /* LCARS-specific bars */
 .swoop1 {
-	/* TNG 5-7 */
-	/*background-color: #EAC68A;*/
-	background-color: #F6F49F;
-	/* DS9 */
-	/*background-color: #EC943A;*/
-	/* VOY */
-	/*background-color: #CC6699; */
-	/* RED */
-	/*background-color: #990000;*/
-	
+        /* TNG 5-7 */
+        /*background-color: #EAC68A;*/
+        background-color: #F6F49F;
+        /* DS9 */
+        /*background-color: #EC943A;*/
+        /* VOY */
+        /*background-color: #CC6699; */
+        /* RED */
+        /*background-color: #990000;*/
+
 }
 
 .datalabel {
-	/*color: #7997FD; */
-	color: #8180F7;
-	/*color: #FE0000;*/
+        /*color: #7997FD; */
+        color: #8180F7;
+        /*color: #FE0000;*/
 }
 
 .bordercolor1 {
-	/*background-color: #990000;	*/
-	/*background-color: #F3F2B1;	*/
-	background-color: #EAC68A;	
+        /*background-color: #990000;    */
+        /*background-color: #F3F2B1;    */
+        background-color: #EAC68A;
 }
 .bordercolor2 {
-	/*background-color: #990000;*/
-	background-color: #EAC68A;	
+        /*background-color: #990000;*/
+        background-color: #EAC68A;
 }
 .bordercolor3 {
-	background-color: #EAC68A;	
-	/*background-color: #990000;*/
+        background-color: #EAC68A;
+        /*background-color: #990000;*/
 }
 .bordercolor4 {
-	background-color: #EAC68A;
-	/*background-color: #990000;*/
+        background-color: #EAC68A;
+        /*background-color: #990000;*/
 }
 
 .lowerheadertext {
-	/*font-size: 55px;
-	line-height: 55px;*/
-	font-size: calc(7.14vh);
-	line-height: calc(7.14vh);
+        /*font-size: 55px;
+        line-height: 55px;*/
+/*      font-size: calc(7.14vh);
+        line-height: calc(7.14vh);
+*/      font-size: calc(5.35vh);
+        line-height: calc(5.35vh);
+
 }
 
 .lowertitlecolor {
-	/*color: #C3D1FE;*/
+        /*color: #C3D1FE;*/
 }
 
 .uppertitlecolor {
-	/*color: #C3D1FE;*/
+        /*color: #C3D1FE;*/
 }
 
 .effectindex {
-	/*match other data labels */
-	/*color: #8180F7;*/
-	/*color: #947BFB;*/
+        /*match other data labels */
+        /*color: #8180F7;*/
+        /*color: #947BFB;*/
 }
 
 .verticalbarleft {
-	position: absolute !important;
-	 /*width: 174px; + width of middle bar to cover inside curve
-	height: 362px;*/ 
-	/* width: calc(26vh); */
-	width: calc(99.1vw);
-	height: calc(49.9vh); 
-	margin: 0px !important; 
-	padding: 0px;
-	top: 0px !important; 
-	left: calc(0.9vw);
-	border-radius: 0px 0px 0px calc(8.5vw);
-	z-index: 0;
-	overflow:hidden;
+        position: absolute !important;
+         /*width: 174px; + width of middle bar to cover inside curve
+        height: 362px;*/
+        /* width: calc(26vh); */
+        width: calc(99.1vw);
+/*      height: calc(49.9vh);
+*/      height: calc(37.425vh);
+        margin: 0px !important;
+        padding: 0px;
+        top: 0px !important;
+        left: calc(0.9vw);
+        border-radius: 0px 0px 0px calc(8.5vw);
+        z-index: 0;
+        overflow:hidden;
 }
 
 .btn {
-	border-top: calc(0.4vh) solid black;
-	border-bottom: calc(0.4vh) solid black;
-	border-right: 0px;
-	border-left: 0px;
-	height: calc(7.1vh);
-	width: calc(19.7vh);
-	color: #000000;
-	background-color: inherit;	
-	border-radius: 0px;
-	padding: calc(2.8vh) calc(0.75vw) 0px 0px;
-	/*padding-right: calc(0.75vw);
-	padding-bottom: calc(1.3vh);*/
-	margin: 0px;
-	box-shadow: none;
-	outline: none;
-	background: none;
-	font-family: "Swiss911 UCm BT", sans-serif;
-	text-align: right;
-	font-size: calc(2.6vh);
-	z-index: 2;
-	position: absolute;
-	left: calc(0.9vw);
+/*      border-top: calc(0.4vh) solid black;
+        border-bottom: calc(0.4vh) solid black;
+*/      border-top: calc(0.3vh) solid black;
+        border-bottom: calc(0.3vh) solid black;
+
+        border-right: 0px;
+        border-left: 0px;
+/*      height: calc(7.1vh);
+        width: calc(19.7vh);
+*/      height: calc(5.325vh);
+        width: calc(14.77vh);
+        color: #000000;
+        background-color: inherit;
+        border-radius: 0px;
+        padding: calc(2.1vh) calc(0.75vw) 0px 0px;
+/*      padding: calc(2.8vh) calc(0.75vw) 0px 0px;
+        padding-right: calc(0.75vw);
+        font-size: calc(2.6vh);
+        padding-bottom: calc(1.3vh);*/
+        margin: 0px;
+        box-shadow: none;
+        outline: none;
+        background: none;
+        font-family: "Swiss911 UCm BT", sans-serif;
+        text-align: right;
+        font-size: calc(1.95vh);
+        z-index: 2;
+        position: absolute;
+        left: calc(0.9vw);
 }
 
 .btntng {
-	/* also need to have each button use a "selected" bg color when active. white bg color easy for red alert */
-	/*top: calc(4.5vh);*/
-	top: calc(7vh);	
+        /* also need to have each button use a "selected" bg color when active.
+white bg color easy for red alert */
+        /*top: calc(4.5vh);*/
+/*      top: calc(7vh);
+*/      top: calc(5.25vh);
 }
 
 .tngactive {
-	background-color: #F8D941;
+        background-color: #F8D941;
 }
 
 .btnds9 {
-	/*top: calc(11.2vh);*/
-	top: calc(13.7vh);
-	/*background-color: #F8D941;*/
+        /*top: calc(11.2vh);
+        top: calc(13.7vh);
+*/      top: calc(10.275vh);
+        /*background-color: #F8D941;*/
 }
 
 .btnvoy {
-	/*top: calc(18vh);*/
-	top: calc(20.5vh);
-	/*background-color: #F8D941;*/
+        /*top: calc(18vh);
+        top: calc(20.5vh);*/
+        top: calc(15.375vh);
+        /*background-color: #F8D941;*/
 }
 
 .btnred {
-	/* also need to have each button use a "selected" bg color when active. white bg color easy for red alert */
-	/*top: calc(24.7vh);*/
-	top: calc(27.2vh);
-	/*background-color: #DEDEDE;*/
-	/*background-color: #F8D941;*/
+        /* also need to have each button use a "selected" bg color when active.
+white bg color easy for red alert */
+        /*top: calc(24.7vh);
+        top: calc(27.2vh);*/
+        top: calc(20.4vh);
+        /*background-color: #DEDEDE;*/
+        /*background-color: #F8D941;*/
 }
 
 .verticalbarleftinnerblack {
-	/* extend this full width of screen */
-	/*width: calc(7.5vh);*/
-	width: calc(90vw);
-	position: absolute;
-	left: calc(20.8vh);
-	top: 0px;
-	height: calc(44.9vh);
-	border-bottom-left-radius: calc(2.6vh);
-	padding: 0px;
-	margin: 0px;
-	overflow: hidden;
+        /* extend this full width of screen */
+        /*width: calc(7.5vh);*/
+        width: calc(90vw);
+        position: absolute;
+        top: 0px;
+
+/*      left: calc(20.8vh);
+        height: calc(44.9vh);
+        border-bottom-left-radius: calc(2.6vh);
+*/      left: calc(15.6vh);
+        height: calc(33.675vh);
+        border-bottom-left-radius: calc(1.95vh);
+
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
 }
 
 .horizontalbarmiddle {
-	width: calc(83vw);
-	height: calc(5vh);
-	left: calc(17vw) !important;
-	padding: 0px;
-	top: calc(44.9vh) !important;
-	position: absolute !important;
+        width: calc(83vw);
+/*      height: calc(5vh);
+        left: calc(17vw) !important;
+        top: calc(44.9vh) !important;
+        */
+        height: calc(3.75vh);
+        left: calc(17vw) !important;
+        top: calc(33.675vh) !important;
+
+        padding: 0px;
+        position: absolute !important;
 }
 
 .upperdataleftheaderaccent {
-	top: calc(9.3vh);
-	left: calc(16.76vw);
-	position: absolute;
-	margin: 0px;
+/*      top: calc(9.3vh);
+*/      top: calc(6.975vh);
+        left: calc(16.76vw);
+        position: absolute;
+        margin: 0px;
 }
 
 .upperdataleftfooteraccent {
-	top: calc(38.8vh);
-	left: calc(16.76vw);
-	position: absolute;
-	margin: 0px;
+/*      top: calc(38.8vh);
+*/      top: calc(29.1vh);
+        left: calc(16.76vw);
+        position: absolute;
+        margin: 0px;
 }
 
 .upperdataleftfooterbar {
-	top: calc(38.8vh);
-	left: calc(19.75vw);
-	width: calc(15.5vw);
-	height: calc(4vh);	
-	position: absolute;
-	margin: 0px;
+/*      top: calc(38.8vh);
+        height: calc(4vh);
+*/      top: calc(29.1vh);
+        left: calc(19.75vw);
+        width: calc(15.5vw);
+        height: calc(3vh);
+        position: absolute;
+        margin: 0px;
 }
 
 .upperdataleftinnerblack {
-	margin: 0px;
-	padding: 0px;
-	position: absolute;
-	border-radius: 0px calc(0.48vw) calc(0.48vw) 0px;
-	top: calc(13.2vh);
-	left: calc(26.85vw);
-	width: calc(17.5vw);
-	height: calc(25.62vh);
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        border-radius: 0px calc(0.48vw) calc(0.48vw) 0px;
+        top: calc(9.9vh);
+        left: calc(26.85vw);
+        width: calc(17.5vw);
+        height: calc(19.215vh);
 }
 
 .upperdataleftframe {
-	margin: 0px;
-	padding: 0px;
-	position: absolute;
-	top: calc(9.3vh);
-	left: calc(26.85vw);
-	width: calc(18.45vw);
-	height: calc(33.5vh);
-	border-radius: 0px calc(2.01vh) calc(2.01vh) 0px;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        top: calc(6.975vh);
+        left: calc(26.85vw);
+        width: calc(18.45vw);
+        height: calc(25.125vh);
+/*      border-radius: 0px calc(2.01vh) calc(2.01vh) 0px;
+*/      border-radius: 0px calc(1.5075vh) calc(1.5075vh) 0px;
 }
 
 .upperdatamidframe {
-	margin: 0px;
-	padding: 0px;
-	position: absolute;
-	/*top: calc(8vh);*/
-	top: calc(9.3vh);
-	left: calc(47.67vw);
-	width: calc(14.9vw);
-	height: calc(33.5vh);
-	border-radius: calc(2.01vh) 0px 0px calc(2.01vh);
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        /*top: calc(8vh);
+        top: calc(9.3vh);
+        height: calc(33.5vh);
+        border-radius: calc(2.01vh) 0px 0px calc(2.01vh);
+*/
+        left: calc(47.67vw);
+        width: calc(14.9vw);
+        top: calc(6.975vh);
+        height: calc(25.125vh);
+        border-radius: calc(1.507vh) 0px 0px calc(1.507vh);
 }
 
 .upperdatamidinnerblack {
-	margin: 0px;
-	padding: 0px;
-	position: absolute;
-	/* 5px radius */
-	border-radius: calc(0.48vw) 0px 0px calc(0.48vw);
-	top: calc(13.2vh);
-	left: calc(48.62vw);
-	width: calc(17vw);
-	height: calc(25.62vh);
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        /* 5px radius */
+        border-radius: calc(0.48vw) 0px 0px calc(0.48vw);
+        top: calc(9.9vh);
+        left: calc(48.62vw);
+        width: calc(17vw);
+        height: calc(19.215vh);
 }
 
-.upperdatamidheaderaccent {	
-	top: calc(9.3vh);
-	right: calc(25vw);
-	/*width: calc(2.15vw);
-	height: calc(4vh);	*/
-	position: absolute;
-	margin: 0px;
+.upperdatamidheaderaccent {
+        top: calc(6.975vh);
+        right: calc(25vw);
+        /*width: calc(2.15vw);
+        height: calc(4vh);      */
+        position: absolute;
+        margin: 0px;
 }
 
 .upperdatamidfooteraccent {
-	/* 738 289 - all positions are absolute. */
-	top: calc(38.8vh);
-	right: calc(25vw);
-	
-	position: absolute;
-	margin: 0px;
+        /* 738 289 - all positions are absolute. */
+        top: calc(29.1vh);
+        right: calc(25vw);
+
+        position: absolute;
+        margin: 0px;
 }
 
 .upperdatamidfooterbar {
-	/*top: calc(37.5vh);*/
-	top: calc(38.8vh);
-	right: calc(36.25vw);
-	width: calc(9.25vw);
-	height: calc(4vh);	
-	position: absolute;
-	margin: 0px;
+        /*top: calc(37.5vh);*/
+        top: calc(29.1vh);
+        right: calc(36.25vw);
+        width: calc(9.25vw);
+        height: calc(3vh);
+        position: absolute;
+        margin: 0px;
 }
 
 .leftaccentsmall {
-	border-top-left-radius: calc(1.82vh);
-	border-bottom-left-radius: calc(1.82vh);
-	width: calc(2.15vw);
-	height: calc(4vh);	
+        border-top-left-radius: calc(1.365vh);
+        border-bottom-left-radius: calc(1.365vh);
+        width: calc(2.15vw);
+        height: calc(3vh);
 }
 
 .rightaccentsmall {
-	border-top-right-radius: calc(1.82vh);
-	border-bottom-right-radius: calc(1.82vh);
-	width: calc(2.15vw);
-	height: calc(4vh);	
+        border-top-right-radius: calc(1.365vh);
+        border-bottom-right-radius: calc(1.365vh);
+        width: calc(2.15vw);
+        height: calc(3vh);
 }
 
 .leftaccentmedium {
-	border-top-left-radius: calc(2.864vh);
-	border-bottom-left-radius: calc(2.864vh);
-	width: calc(3vw);
-	height: calc(5.73vh);
+        border-top-left-radius: calc(2.148vh);
+        border-bottom-left-radius: calc(2.148vh);
+        width: calc(3vw);
+        height: calc(4.2975vh);
 }
 
 .lowerdataleftheaderaccent {
-	position: absolute;
-	top: calc(52.3vh);
-	left: calc(0.9vw);
+        position: absolute;
+        top: calc(39.225vh);
+        left: calc(0.9vw);
 }
 
 .lowerdataleftfooteraccent {
-	position: absolute;
-	left: calc(0.9vw);
-	top: calc(92.45vh);
+        position: absolute;
+        left: calc(0.9vw);
+        top: calc(69.3375vh);
 }
 
 /* 38, 388 - 584x372 */
 .lowerdataleftframe {
-	position: absolute;
-	left: calc(5vw);
-	top: calc(52.3vh);
-	width: calc(55.4vw);
-	height: calc(45.88vh);
-	border-top-right-radius: calc(2.864vh);
-	border-bottom-right-radius: calc(2.864vh);
+        position: absolute;
+        left: calc(5vw);
+        top: calc(39.225vh);
+        width: calc(55.4vw);
+        height: calc(34.41vh);
+        border-top-right-radius: calc(2.148vh);
+        border-bottom-right-radius: calc(2.148vh);
 }
 
 .lowerdataleftinnerblack {
-	/* 574x366 */
-	position: absolute;
-	left: calc(4.5vw);
-	top: calc(58vh);
-	width: calc(54.4vw);
-	height: calc(34.42vh);
-	border-top-right-radius: calc(0.5vw);
-	border-bottom-right-radius: calc(0.5vw);
+        /* 574x366 */
+        position: absolute;
+        left: calc(4.5vw);
+        top: calc(43.5vh);
+        width: calc(54.4vw);
+        height: calc(25.815vh);
+        border-top-right-radius: calc(0.5vw);
+        border-bottom-right-radius: calc(0.5vw);
 }
 
 .lowerdatalefttitle {
-	position: absolute;
-	left: calc(4vw);
-	top: calc(51.9vh);
-	/*width: calc(8.75vw);*/
-	height: calc(6.25vh);
-	margin: 0px;
-	padding: 0px calc(1vw) 0px calc(1vw);
-	text-align: center;
-	vertical-align: middle;
+        position: absolute;
+        left: calc(4vw);
+        top: calc(38.925vh);
+        /*width: calc(8.75vw);*/
+        height: calc(4.6875vh);
+        margin: 0px;
+        padding: 0px calc(1vw) 0px calc(1vw);
+        text-align: center;
+        vertical-align: middle;
 }
 
 
 .rightaccentmedium {
-	border-top-right-radius: calc(2.864vh);
-	border-bottom-right-radius: calc(2.864vh);
-	width: calc(3vw);
-	height: calc(5.73vh);
+        border-top-right-radius: calc(2.148vh);
+        border-bottom-right-radius: calc(2.148vh);
+        width: calc(3vw);
+        height: calc(4.2975vh);
 }
 
 .lowerdatarightheaderaccent {
-	position: absolute;
-	top: calc(52.3vh);
-	right: calc(0.9vw);
+        position: absolute;
+        top: calc(39.225vh);
+        right: calc(0.9vw);
 }
 
 .lowerdatarightfooteraccent {
-	position: absolute;
-	right: calc(0.9vw);
-	top: calc(92.45vh);
+        position: absolute;
+        right: calc(0.9vw);
+        top: calc(69.3375vh);
 }
 
 .lowerdatarightframe {
-	/* 336x372 */
-	position: absolute;
-	left: calc(62.7vw);
-	top: calc(52.3vh);
-	width: calc(32.3vw);
-	height: calc(45.88vh);
-	border-top-left-radius: calc(2.864vh);
-	border-bottom-left-radius: calc(2.864vh);
+        /* 336x372 */
+        position: absolute;
+        left: calc(62.7vw);
+        top: calc(39.225vh);
+        width: calc(32.3vw);
+        height: calc(34.41vh);
+        border-top-left-radius: calc(2.148vh);
+        border-bottom-left-radius: calc(2.148vh);
 }
 
 .lowerdatarightinnerblack {
-	position: absolute;
-	left: calc(64.2vw);
-	top: calc(58vh);
-	width: calc(31.3vw);
-	height: calc(34.42vh);
-	border-top-left-radius: calc(0.5vw);
-	border-bottom-left-radius: calc(0.5vw);
+        position: absolute;
+        left: calc(64.2vw);
+        top: calc(43.5vh);
+        width: calc(31.3vw);
+        height: calc(25.815vh);
+        border-top-left-radius: calc(0.5vw);
+        border-bottom-left-radius: calc(0.5vw);
 }
 
 .lowerdatarighttitle {
-	position: absolute;
-	right: calc(4vw);
-	top: calc(51.9vh);
-	/*width: calc(8.5vw);*/
-	height: calc(6.25vh);
-	margin: 0px;
-	padding: 0px calc(1vw) 0px calc(1vw);	
-	text-align: right;
-	vertical-align: middle;
+        position: absolute;
+        right: calc(4vw);
+        top: calc(38.925vh);
+        /*width: calc(8.5vw);*/
+        height: calc(4.6875vh);
+        margin: 0px;
+        padding: 0px calc(1vw) 0px calc(1vw);
+        text-align: right;
+        vertical-align: middle;
 }
 
- 
+
 .maintitlediv {
-	float: right;
-	/*margin-top: 10px*/
-	margin-top: calc(1.3vh);
-	/*font-size: 54px; */
-	right: calc(4.6%);
-	font-size: calc(8.0vh);
-	position: absolute;
-	/* TNG 5-7 */
-	color: #F8D941;
+        float: right;
+        /*margin-top: 10px*/
+        margin-top: calc(0.3vh);
+        /*font-size: 54px; */
+        right: calc(4.6%);
+        font-size: calc(6.0vh);
+        position: absolute;
+        /* TNG 5-7 */
+        color: #F8D941;
 }
 
 /*
 .screenheader {
-	float: right;	
+        float: right;
 }*/
 
 /* marquee scrolling */
 .newsfeed-desc {
-	
+
 }
 
 .newsfeed-title {
-	
+
 }
 
 .newsfeed-source {
-	
+
 }
 
 /* to-do: convert all marquee styles to screen-adaptive calculations */
 .marquee {
-	width: calc(43.5vw);
-	float: left;
-	margin-top: 0px;
-	/*margin-left: calc(2.7vw);*/
-	margin-left: calc(1.2vw);
-	text-align: left;
+        width: calc(43.5vw);
+        float: left;
+        margin-top: 0px;
+        /*margin-left: calc(2.7vw);*/
+        margin-left: calc(1.2vw);
+        text-align: left;
 }
+
 .marqueeContainer {
-	/*width: 670px;*/
-	width: calc(60.3vw);
-	padding: 0px;
-	float: left;
-	/*font-size: 40px;
-	line-height: 40px;*/
-	font-size: calc(5.2vh);
-	line-height: calc(5.2vh);
-	margin-left: calc(2.5vw);
-	/*margin-bottom: 30px;*/
-	margin-bottom: calc(3.9vh);
-	/*margin-top: calc(0vh);*/
+        /*width: 670px;*/
+        width: calc(60.3vw);
+        padding: 0px;
+        float: left;
+        /*font-size: 40px;
+        line-height: 40px;*/
+        font-size: calc(3.9vh);
+        line-height: calc(3.9vh);
+        margin-left: calc(2.5vw);
+        /*margin-bottom: 30px;*/
+        margin-bottom: calc(2.925vh);
+        /*margin-top: calc(0vh);*/
 }
 
 /* css version of marquee */
 .marqueespan {
-	width: calc(43.5vw);
-	height: calc(5.2vh);
-	float: left;
-	margin-top: 0px;
-	/*margin-left: calc(2.7vw);*/
-	margin-left: calc(1.2vw);
-	text-align: left;
-	overflow: hidden;
-	white-space: nowrap;
-	display: inline-flex;
+        width: calc(43.5vw);
+        height: calc(3.9vh);
+        float: left;
+        margin-top: 0px;
+        /*margin-left: calc(2.7vw);*/
+        margin-left: calc(1.2vw);
+        text-align: left;
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-flex;
 }
 
 .marqueeouterspan span {
-	display: flex;
-	animation: marquee1 15s linear infinite;
-	/*text-align: center;
-	line-height: calc(5.2vh);
-	-moz-transform: translateX(100%);
-	-webkit-transform: translateX(100%);
-	transform: translateX(100%);
-	-moz-animation: marquee1 15s linear infinite;
-	-webkit-animation: marquee1 15s linear infinite;
-	animation: marquee1 15s linear infinite;*/
+        display: flex;
+        animation: marquee1 15s linear infinite;
+        /*text-align: center;
+        line-height: calc(5.2vh);
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -moz-animation: marquee1 15s linear infinite;
+        -webkit-animation: marquee1 15s linear infinite;
+        animation: marquee1 15s linear infinite;*/
 }
 
 @keyframes marquee1 {
-	0% {
-		/*-moz-transform: translateX(100%);
-		-webkit-transform: translateX(100%); */
-		transform: translate(0%, 0);
-	}
-	100% { 		
-		/*-moz-transform: translateX(-100%);
-		-webkit-transform: translateX(-100%); */
-		transform: translateX(-100%, 0);
-	}
+        0% {
+                /*-moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%); */
+                transform: translate(0%, 0);
+        }
+        100% {
+                /*-moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%); */
+                transform: translateX(-100%, 0);
+        }
 }
 
 /* end css version of marquee */
 
 .feedLabel {
-	/*width: 120px;*/
-	width: calc(10.5vw);
-	text-align: right;
-	float: left;
-	font-size: calc(5.2vh);
-	line-height: calc(5.2vh);
-	/*color: #8180F7;*/
-	/*color: #947BFB;*/
+        /*width: 120px;*/
+        width: calc(10.5vw);
+        text-align: right;
+        float: left;
+        font-size: calc(3.9vh);
+        line-height: calc(3.9vh);
+        /*color: #8180F7;*/
+        /*color: #947BFB;*/
 }
-/* apparently this module needs to be force-fed styles because the chain breaks at some point */
+/* apparently this module needs to be force-fed styles because the chain breaks
+at some point */
 #module_10_MMM-HTTPRequestDisplay .feedlabel {
-	width: calc(10.5vw);
-	text-align: right;
-	float: left;
-	font-size: calc(5.2vh);
-	line-height: calc(5.2vh);
+        width: calc(10.5vw);
+        text-align: right;
+        float: left;
+        font-size: calc(3.9vh);
+        line-height: calc(3.9vh);
 }
 
 .marquee span {
-	/*margin-top: -20px;
-	margin-bottom: -100px;*/
-/*	padding: 0px;*/
+        /*margin-top: -20px;
+        margin-bottom: -100px;*/
+/*      padding: 0px;*/
 }
 
 .marquee p {
-	position: absolute;
-	/*width: 100%;*/
-	float: left;
-	height: 100%;
-	margin: 0;
-	line-height: 1em;
-	text-align: left;
-	-moz-transform: translateX(100%);
-	-webkit-transform: translateX(100%);
-	transform: translateX(100%);
-	-moz-animation: scroll-left 2s linear infinite;
-	-webkit-animation: scroll-left 2s linear infinite;
-	animation: scroll-left 20s linear infinite;
+        position: absolute;
+        /*width: 100%;*/
+        float: left;
+        height: 100%;
+        margin: 0;
+        line-height: 1em;
+        text-align: left;
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -moz-animation: scroll-left 2s linear infinite;
+        -webkit-animation: scroll-left 2s linear infinite;
+        animation: scroll-left 20s linear infinite;
 }
 
-.weatherforecast .forecasttable {	
-	float: left;
-	/*width: 160px;*/
-	width: calc(14.2vw);
-	margin-left: 0px;
-	margin-top: calc(2.4vh);
-	margin-right: calc(-0.3vw);
-	zoom: 200%;
+.weatherforecast .forecasttable {
+        float: left;
+        /*width: 160px;*/
+        width: calc(14.2vw);
+        margin-left: 0px;
+        margin-top: calc(1.65vh);
+        margin-right: calc(-0.8vw);
+        zoom: 190%;
 }
 
 .weatherforecast .forecasttable td:nth-child(1) {
-	/*background-color: #C3D1FE;
-	color: #000000;*/
+        /*background-color: #C3D1FE;
+        color: #000000;*/
 }
 
-.weatherforecast .todayforecastdiv {	
-	float: left;
-	width: calc(20.5vw);
-	zoom: 125%;
-	margin-left: calc(0.8vw);
-	margin-top: calc(12.36vh);
-	margin-right: calc(-3vw);
+.weatherforecast .todayforecastdiv {
+        float: left;
+        width: calc(22vw);
+        zoom: 104%;
+        margin-left: calc(-0.5vw);
+        margin-top: calc(10vh);
+        margin-right: calc(-1vw);
+
 }
 .weatherforecast {
-	float: right;
+        float: right;
 }
 
 .weatherforecast .todayforecastdiv .todayicon {
-	transform: scale(0.75);
-	margin-top: 5px;	
+        transform: scale(0.75);
+        margin-top: 5px;
 }
 
 .weatherforecast .day {
-	padding-left: 0px;
-	padding-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
 }
 
 /* to-do: move this to bottom of section */
 .todayforecastheader {
-	position: absolute;
-	/*top: 115px;
-	left: 570px;*/
-	/*top: calc(14.9vh);*/
-	top: calc(31.5vh);
-	left: calc(50.12vw);
-	font-size: calc(4.875vh);
-	line-height: calc(5.68vh);
-	/*line-height: calc(4.55vh);*/
+        position: absolute;
+        /*top: 115px;
+        left: 570px;*/
+        /*top: calc(14.9vh);*/
+        top: calc(25.1vh);
+        left: calc(52vw);
+        font-size: calc(3.175vh);
+        line-height: calc(3.5vh);
+        /*line-height: calc(4.55vh);*/
 }
 
 .currentweather .currentweatherdiv {
-	float: right;
-	/*temp above -10C...shrink if below -10 to accomodate digits? */
-	zoom: 125%;
-	/*zoom: 118%;*/
-	margin-left: 0px;
-	margin-top: calc(8.8vh);
-	margin-right: calc(5.3vw);
+        float: right;
+        /*temp above -10C...shrink if below -10 to accomodate digits? */
+        zoom: 116%;
+        /*zoom: 118%;*/
+        margin-left: calc(0vw);
+        margin-top: calc(5.5vh);
+        margin-right: calc(9vw);
 }
 
 .currentweather .currentweatherdiv .weathericon {
-	margin-left: calc(1.5vw);
+        margin-left: calc(1.5vw);
 }
 
 .sunsetcombined {
-	float: right;
-	margin-left: calc(2.5vw);
+        float: right;
+        margin-left: calc(2.5vw);
 }
 
 .currentweather .effectindexdiv {
-	float: left;
-	/* float: right; */
+        float: left;
+        /* float: right; */
 }
 
 .currentweather .winddiv {
-	float: left;
+        float: left;
 }
 
 /* alternate theme classes */
 .redswoop {
-	/*background-color: #990000;*/
-	background-color: #FE0000;
-	/* add fade-in/fade-out pulse? */
+        /*background-color: #990000;*/
+        background-color: #FE0000;
+        /* add fade-in/fade-out pulse? */
 }
 .redactive {
-	background-color: #DEDEDE;
+        background-color: #DEDEDE;
 }
 .redinactive {
-	background-color: #FE0000;
+        background-color: #FE0000;
 }
 .redlabel {
-	color: #FE0000;
+        color: #FE0000;
 }
 .redbasetext {
-	color: #DEDEDE;
+        color: #DEDEDE;
 }
 .redbordercolor {
-	background-color: #990000;
+        background-color: #990000;
 }
 .redmaintitle {
-	color: #FFFFBD;
+        color: #FFFFBD;
 }
 
 .ds9swoop {
-	/*background-color: #EC943A;*/
-	background-color: #D49E82;
+        /*background-color: #EC943A;*/
+        background-color: #D49E82;
 }
 .ds9basetext {
-	color: #BAA3CD;
+        color: #BAA3CD;
 }
 .ds9active {
-	background-color: #C57C69;
+        background-color: #C57C69;
 }
 .ds9label {
-	color: #7C516F;
-	/*color: #C082A9;*/
+        color: #7C516F;
+        /*color: #C082A9;*/
 }
 .ds9bordercolor {
-	/*background-color: #D49E82;*/
-	background-color: #EC943A;	
+        /*background-color: #D49E82;*/
+        background-color: #EC943A;
 }
 .ds9maintitle {
-	color: #C57C69;
+        color: #C57C69;
 }
 
 .voyswoop {
-	/*background-color: #849EBF;*/
-	/* way too dark grey */
-	/*background-color: #52585F;*/
-	background-color: #7A86A0;
+        /*background-color: #849EBF;*/
+        /* way too dark grey */
+        /*background-color: #52585F;*/
+        background-color: #7A86A0;
 }
 .voybordercolor {
-	/*background-color: #CC6699;*/
-	/*background-color: #BEB6DF;*/
-	/*background-color: #A099CF;*/
-	/*background-color: #C3DCC7;*/
-	background-color: #C3DCC7;
+        /*background-color: #CC6699;*/
+        /*background-color: #BEB6DF;*/
+        /*background-color: #A099CF;*/
+        /*background-color: #C3DCC7;*/
+        background-color: #C3DCC7;
 }
 .voybordercolor3 {
-	/*background-color: #BEB6DF;*/
-	background-color: #CC6699;
-	/*background-color: #A690F5;*/
+        /*background-color: #BEB6DF;*/
+        background-color: #CC6699;
+        /*background-color: #A690F5;*/
 }
 .voybordercolor4 {
-	background-color: #CC6699;
+        background-color: #CC6699;
 }
 .voybasetext {
-	color: #99CCFF;
+        color: #99CCFF;
 }
 .voyactive {
-	/*background-color: #E5B970;*/
-	background-color: #FFCC66;
+        /*background-color: #E5B970;*/
+        background-color: #FFCC66;
 }
 .voylabel {
-	color: #9999FF;
-	/*color: #5C7EF9;*/
-	/*color: #6274FC;*/
+        color: #9999FF;
+        /*color: #5C7EF9;*/
+        /*color: #6274FC;*/
 }
 .voymaintitle {
-	/*color: #E5B970;*/
-	color: #FFCC66;
+        /*color: #E5B970;*/
+        color: #FFCC66;
 }
 
 .pulse {
-	-webkit-animation: flickerAnimation 1.5s infinite;
-	-moz-animation: flickerAnimation 1.5s infinite;
-	-o-animation: flickerAnimation 1.5s infinite;
-	-animation: flickerAnimation 1.5s infinite;
+        -webkit-animation: flickerAnimation 1.5s infinite;
+        -moz-animation: flickerAnimation 1.5s infinite;
+        -o-animation: flickerAnimation 1.5s infinite;
+        -animation: flickerAnimation 1.5s infinite;
 }
 
 @keyframes flickerAnimation {
-	0% {opacity: 1;}
-	50% {opacity: 0;}
-	100% {opacity: 1;}
+        0% {opacity: 1;}
+        50% {opacity: 0;}
+        100% {opacity: 1;}
 }
 @-o-keyframes flickerAnimation {
-	0% {opacity: 1;}
-	50% {opacity: 0;}
-	100% {opacity: 1;}
+        0% {opacity: 1;}
+        50% {opacity: 0;}
+        100% {opacity: 1;}
 }
 @-moz-keyframes flickerAnimation {
-	0% {opacity: 1;}
-	50% {opacity: 0;}
-	100% {opacity: 1;}
+        0% {opacity: 1;}
+        50% {opacity: 0;}
+        100% {opacity: 1;}
 }
 @-webkit-keyframes flickerAnimation {
-	0% {opacity: 1;}
-	50% {opacity: 0;}
-	100% {opacity: 1;}
+        0% {opacity: 1;}
+        50% {opacity: 0;}
+        100% {opacity: 1;}
 }
 
 .fullInverted {
-	filter: 100%;
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
 }
